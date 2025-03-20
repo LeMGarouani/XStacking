@@ -1,1 +1,1 @@
-# XStacking : An Efficient and inherently Explainable Framework for Stacked Ensemble Learning
+# XStacking : An Effective and inherently Explainable Framework for Stacked Ensemble Learning
