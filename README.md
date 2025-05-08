@@ -25,7 +25,7 @@ XStacking/  # Root directory
 ```
 ---
 ### XStacking algorithm
-![XStacking Algorithm](EnsembleLearning/framework.pdf)
+![XStacking Algorithm]([EnsembleLearning/Framework.pdf](https://github.com/LeMGarouani/XStacking/blob/main/EnsembleLearning/Framework.jpg))
 
 
 ---
