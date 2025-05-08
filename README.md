@@ -48,7 +48,7 @@ from tuner import TuneClassifier
 from EnsembleLearning import StackingClassifier, StackingRegressor
 
 # Load the dataset
-path="datasets\Classification\cmc.tsv"
+path="path to your dataset"
 dataset = pd.read_csv(path, sep='\t')
 X = dataset.drop('target', axis=1)
 y = dataset['target']
@@ -63,10 +63,12 @@ base_learners = [
     (MLPClassifier(random_state=1, max_iter=700))
 ]
 
-# Initialize and train the SimpleStacking model
+# Initialize the StackingClassifier or StackingRegressor
 stacking_model = StackingClassifier(base_learners, meta_learner='xgb') # stacking for classification
-stacking_model = StackingRegressor(base_learners, meta_learner='svr')  # tacking for regression
-stacking_model.fit(X_train, y_train,mode='xai', ponderation=False)     # mode=xai for XStacking, normal for traditional stacking
+stacking_model = StackingRegressor(base_learners, meta_learner='svr')  # stacking for regression
+
+# Train the stacking the stacking model ; mode=xai for XStacking, normal for traditional stacking
+stacking_model.fit(X_train, y_train,mode='xai', ponderation=False)    
 
 # Make predictions and evaluate the model
 predictions = stacking_model.predict(X_test)
