@@ -76,6 +76,26 @@ accuracy = accuracy_score(y_test, predictions)
 print(f"Stacking Model Accuracy: {accuracy}")
 ```
 
+## Citing XStacking
+
+If you use the XStacking approach in a scientific publication, please consider citing the following paper:
+
+* **Garouani, M., Barhrhouj, A., \& Teste, O. "XStacking: An effective and inherently explainable framework for stacked ensemble learning." Information Fusion, Volume 124, 2025, 103358. DOI: https://doi.org/10.1016/j.inffus.2025.103358**
+
+```bibtex
+@article{xstacking,
+title = {XStacking : An effective and inherently explainable framework for stacked ensemble learning},
+journal = {Information Fusion},
+volume = {124},
+pages = {103358},
+year = {2025},
+issn = {1566-2535},
+doi = {10.1016/j.inffus.2025.103358},
+author = {Moncef Garouani and Ayah Barhrhouj and Olivier Teste},
+}
+```
+
+
 
 ---
 ## License
